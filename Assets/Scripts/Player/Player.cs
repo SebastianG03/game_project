@@ -9,7 +9,7 @@ namespace Assets.Scripts.Player
 
         private Rigidbody2D _RigidBody;
         private float Horizontal;
-        private bool IsJumping;
+        private bool IsGrounded;
         PlayerMovement playerMovement;
 
         [SerializeField]
@@ -26,18 +26,17 @@ namespace Assets.Scripts.Player
         void Update()
         {
             Debug.DrawRay(transform.position, Vector3.down * 0.4f, Color.red);
-            float vertical = Input.GetAxisRaw("Vertical");
-            IsJumping = playerMovement.IsJumping(transform);
+            float vertical = Input.GetAxisRaw("Vertical2");
+            IsGrounded = playerMovement.IsNotJumping(transform);
 
             Move();
         }
 
         private void Move()
         {
-            bool horizontalKeyDown = playerMovement.isHorizontalKeyDown();
-            Horizontal = playerMovement.HorizontalMovement(horizontalKeyDown);
-            playerMovement.Jump(_RigidBody, JumpForce, IsJumping);
-            
+            bool horizontalKeyDown = playerMovement.isHorizontalKeyDown("Horizontal2");
+            Horizontal = playerMovement.HorizontalMovement(horizontalKeyDown, "Horizontal2");
+            playerMovement.Jump(_RigidBody, JumpForce, IsGrounded, Input.GetKeyDown(KeyCode.W));
         }
 
         private void FixedUpdate()
