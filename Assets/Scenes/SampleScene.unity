@@ -3578,6 +3578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b817b13404d0174a8b9d769690459ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _constants: {fileID: 11400000, guid: de102ae3074b3974796976bb2b9fe5fd, type: 2}
   controlType: 1
   JumpForce: 3
   MaxHealth: 100
@@ -3615,8 +3616,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.023744583, y: -0.073265076}
-  m_Size: {x: 0.120038986, y: 0.445534}
+  m_Offset: {x: -0.015966892, y: -0.073265076}
+  m_Size: {x: 0.13559437, y: 0.445534}
   m_Direction: 0
 --- !u!50 &1796888041
 Rigidbody2D:
