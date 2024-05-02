@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Assets.Scripts.Controls
+namespace Assets.Scripts.Controls.Structures
 {
     public struct FrameInput
     {

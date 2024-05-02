@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Assets.Scripts.Entities.Player
 {
-    public interface IPlayerController
+    public interface IPlayerInput
     {
         public event Action<bool, float> GroundedChanged;
 

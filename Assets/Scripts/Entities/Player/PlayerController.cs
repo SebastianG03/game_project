@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Assets.Scripts.Entities.Player
 {
     [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
-    public class PlayerController : MonoBehaviour, IPlayerController
+    public class PlayerController : MonoBehaviour, IPlayerInput
     {
 
         //Entity Components
@@ -188,6 +188,7 @@ namespace Assets.Scripts.Entities.Player
         }
 
 
+        //Returns _frameVelocity.x
         private void HandleDirection()
         {
             if (_frameInput.Move.x == 0)
@@ -202,6 +203,7 @@ namespace Assets.Scripts.Entities.Player
             }
         }
 
+        //returns _frameVelocity.y 
         private void HandleGravity()
         {
             if (IsGrounded && _frameVelocity.y <= 0f)

@@ -1,4 +1,4 @@
-namespace Assets.Scripts.Controls
+namespace Assets.Scripts.Controls.Structures
 {
     public enum PlayerControlType
     {

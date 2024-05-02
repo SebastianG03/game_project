@@ -1,4 +1,4 @@
-namespace Assets.Scripts.Entities
+namespace Assets.Scripts.EntitiesEntity
 {
     enum EntityTypeAttacks
     {
