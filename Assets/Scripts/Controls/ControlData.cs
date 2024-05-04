@@ -1,5 +1,6 @@
-namespace Assets.Scripts.Controls
-{
+using Assets.Scripts.Controls.Structures;
+
+namespace Assets.Scripts.Controls {
     public class ControlData
     {
         PlayerControlType playerControls;

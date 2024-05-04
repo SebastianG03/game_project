@@ -1,4 +1,7 @@
+
 using Assets.Scripts.Controls;
+using Assets.Scripts.Controls.Structures;
+using Assets.Scripts.Entities.Entity;
 using Assets.Scripts.Stats;
 using System;
 using Unity.VisualScripting;
